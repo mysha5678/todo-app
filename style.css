@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #010101;
+    color: white;
+}
+#myInput{
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 15px 0 20px;
+}
+#myInput:focus {
+    outline: none;
+}
+button{
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover{
+    background-color: transparent;
+    color: yellow;
+    transform: scale(0.9);
+}
+}
+.main-todo-list{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    align-items: center;
+    height: auto;
+}
+li{
+    cursor: pointer;
+    list-style-type: circle;
+    margin: 15px 0;
+    text-transform: capitalize;
+    font-size: 500;
+    &:hover{
+        color: #feac5e;
+    }
+}
